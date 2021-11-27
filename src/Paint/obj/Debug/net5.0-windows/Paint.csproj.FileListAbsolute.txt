@@ -17,3 +17,22 @@ F:\Development\C#\Paint\obj\Debug\net5.0-windows\ref\Paint.dll
 F:\Development\C#\Paint\obj\Debug\net5.0-windows\Paint.pdb
 F:\Development\C#\Paint\obj\Debug\net5.0-windows\Paint.genruntimeconfig.cache
 F:\Development\C#\Paint\obj\Debug\net5.0-windows\Paint.Properties.Resources.resources
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\Paint.exe
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\Paint.deps.json
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\Paint.runtimeconfig.json
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\Paint.runtimeconfig.dev.json
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\Paint.dll
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\ref\Paint.dll
+F:\Development\Github repos\Paint\src\Paint\bin\Debug\net5.0-windows\Paint.pdb
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.csproj.AssemblyReference.cache
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.Form1.resources
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.Properties.Resources.resources
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.csproj.GenerateResource.cache
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.AssemblyInfoInputs.cache
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.AssemblyInfo.cs
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.csproj.CoreCompileInputs.cache
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.dll
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\ref\Paint.dll
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.pdb
+F:\Development\Github repos\Paint\src\Paint\obj\Debug\net5.0-windows\Paint.genruntimeconfig.cache

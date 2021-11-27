@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Development\\C#\\Paint\\Paint.csproj",
+      "projectUniqueName": "F:\\Development\\Github repos\\Paint\\src\\Paint\\Paint.csproj",
       "projectName": "Paint",
-      "projectPath": "F:\\Development\\C#\\Paint\\Paint.csproj",
+      "projectPath": "F:\\Development\\Github repos\\Paint\\src\\Paint\\Paint.csproj",
       "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-      "outputPath": "F:\\Development\\C#\\Paint\\obj\\",
+      "outputPath": "F:\\Development\\Github repos\\Paint\\src\\Paint\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",

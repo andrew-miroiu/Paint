@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pUVFU0cyrtpsx2+k/vEptiqQG3s1pvZ296j5b8P3/52y2oGpI3bk63TVw49J4wlsEKc86CkHxlA2Cb2orns+PA==",
+  "dgSpecHash": "EV3lQnYFDiKXRFmpJvRYf6RjDZPjrao1yA1DJPOqJDpOh1y1s2s2L2HaJCBYy3ulD3N9Ip635nAp1xuOJ2KhFg==",
   "success": true,
-  "projectFilePath": "F:\\Development\\C#\\Paint\\Paint.csproj",
+  "projectFilePath": "F:\\Development\\Github repos\\Paint\\src\\Paint\\Paint.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

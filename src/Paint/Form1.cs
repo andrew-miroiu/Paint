@@ -27,11 +27,13 @@ namespace Paint
         int brushSize = 5;
         Bitmap surface;
 
-
+        SaveFileDialog saveDialog = new SaveFileDialog();
 
         public Form1()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+
             graphics = canvas.CreateGraphics();
             pen = new Pen(Color.Black, 5);
             eraser = new Pen(Color.White, 5);
@@ -39,7 +41,6 @@ namespace Paint
             graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
             eraser.StartCap = System.Drawing.Drawing2D.LineCap.Round;
-            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             surface = new Bitmap(canvas.Width, canvas.Height);
             newGraph = Graphics.FromImage(surface);
         }
@@ -90,20 +91,18 @@ namespace Paint
         {
             if (cursorX != -1 && cursorY != -1 && cursorMoving == true)
             {
-                label1.Text = "X: " + cursorStringX + "  Y: " + cursorStringY;
                 if (eraserActivated == true)
                 {
                     graphics.DrawLine(eraser, new Point(cursorX, cursorY), e.Location);
-                    cursorX = e.X;
-                    cursorY = e.Y;
                 }
                 else
                 {
                     graphics.DrawLine(pen, new Point(cursorX, cursorY), e.Location);
-                    cursorX = e.X;
-                    cursorY = e.Y;
                 }
             }
+            cursorX = e.X;
+            cursorY = e.Y;
+            label1.Text = "X: " + cursorX.ToString() + "  Y: " + cursorY.ToString();
         }
 
         private void canvas_Click(object sender, EventArgs e)
@@ -139,15 +138,27 @@ namespace Paint
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
+            /*saveDialog.Filter = "Png Files (*png) | *.png";
+            saveDialog.DefaultExt = "png";
+            saveDialog.AddExtension = true;
 
-            sfd.Filter = "Png Files (*png) | *.png";
-            sfd.DefaultExt = "png";
-            sfd.AddExtension = true;
-
-            if(sfd.ShowDialog() == DialogResult.OK)
+            if(saveDialog.ShowDialog() == DialogResult.OK)
             {
-                surface.Save(sfd.FileName, System.Drawing.Imaging.ImageFormat.Png);
+                surface.Save(saveDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
+            }*/
+
+            //SaveFileDialog dialog = new SaveFileDialog();
+
+            saveDialog.Filter = "Jpeg Files (*jpeg) | *.jpeg";
+            saveDialog.DefaultExt = "jpeg";
+            saveDialog.AddExtension = true;
+
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                int width = Convert.ToInt32(canvas.Width);
+                int height = Convert.ToInt32(canvas.Height);
+                canvas.DrawToBitmap(surface, new Rectangle(0, 0, width, height));
+                surface.Save(saveDialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
             }
         }
     }
