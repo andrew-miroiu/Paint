@@ -129,27 +129,29 @@ namespace Paint
         private void button3_Click(object sender, EventArgs e)
         {
             brushSize++;
+            changeBrushSize();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             brushSize--;
+            changeBrushSize();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            /*saveDialog.Filter = "Png Files (*png) | *.png";
+            saveDialog.Filter = "Png Files (*png) | *.png";
             saveDialog.DefaultExt = "png";
             saveDialog.AddExtension = true;
 
             if(saveDialog.ShowDialog() == DialogResult.OK)
             {
                 surface.Save(saveDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
-            }*/
+            }
 
             //SaveFileDialog dialog = new SaveFileDialog();
 
-            saveDialog.Filter = "Jpeg Files (*jpeg) | *.jpeg";
+            /*saveDialog.Filter = "Jpeg Files (*jpeg) | *.jpeg";
             saveDialog.DefaultExt = "jpeg";
             saveDialog.AddExtension = true;
 
@@ -159,7 +161,16 @@ namespace Paint
                 int height = Convert.ToInt32(canvas.Height);
                 canvas.DrawToBitmap(surface, new Rectangle(0, 0, width, height));
                 surface.Save(saveDialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-            }
+            }*/
+        }
+
+        private void changeBrushSize()
+        {
+            pen = new Pen(Color.Black, brushSize);
+            eraser = new Pen(Color.White, brushSize);
+            graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            eraser.StartCap = System.Drawing.Drawing2D.LineCap.Round;
         }
     }
 }
